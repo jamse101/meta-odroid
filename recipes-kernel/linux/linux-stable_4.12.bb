@@ -5,6 +5,8 @@ LINUX_VERSION ?= "4.12.3"
 SRCREV ?= "8f883aa5b6617e77841e2d2e6fe9c5e096d3ad55"
 SRC_URI = "git://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable.git;branch=linux-4.12.y"
 
+SRC_URI_append_odroid-c1 = " file://odroid-c1/0001-odroidc1-loadaddr.patch"
+
 O_KERNEL_CONFIG_odroid-xu3  = "odroid-xu3"
 O_KERNEL_CONFIG_odroid-xu4  = "odroid-xu3"
 O_KERNEL_CONFIG_odroid-xu3-lite  = "odroid-xu3"
